@@ -43,10 +43,6 @@ const Chat = ({name}) => {
     }
   }, [drone])
 
-  useEffect(() => {
-    console.log('messages', messages);
-  }, [messages])
-
   const onSendMessage = (message) => {
       if(message) {
         drone.publish({
