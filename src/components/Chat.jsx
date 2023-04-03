@@ -8,6 +8,7 @@ const Chat = ({name}) => {
     
   const [drone, setDrone] = useState();
   const [messages, setMessages] = useState([]);
+
   const [user, setUser] = useState({
     username: name,
     color: getRandomColor(),
@@ -37,15 +38,12 @@ const Chat = ({name}) => {
         setUser({...user, id: drone.clientId})
 
         room.on('data', (data, member) => {
-          setMessages((oldArray) => [...oldArray, {member, text: data}])
+          const timestamp = new Date();
+          setMessages((oldArray) => [...oldArray, {member, text: data, timestamp}])
         });
       });
     }
   }, [drone])
-
-  useEffect(() => {
-    console.log('messages', messages);
-  }, [messages])
 
   const onSendMessage = (message) => {
       if(message) {

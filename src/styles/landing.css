@@ -1,0 +1,115 @@
+.landing-wrapper {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(#496de4, #b773b9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 330px;
+  height: auto;
+  background-color: transparent;
+  border: none;
+}
+.name-wrapper svg {
+  margin-top: 60px;
+  width: 50px;
+  height: 50px;
+  fill: #fff;
+}
+.name-wrapper .name-app {
+  font-size: 36px;
+  margin-bottom: 20px;
+  padding: 5px;
+  color: #fff;
+}
+.name-wrapper .title {
+  font-size: 28px;
+  margin: 30px auto 25px;
+  text-align: center;
+  color: #fff;
+}
+.name-wrapper .name-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.name-wrapper .name-form .chat-name-input {
+  width: 300px;
+  height: 60px;
+  border: 1px solid #dddddd;
+  border-radius: 24px;
+  padding-left: 20px;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+.name-wrapper .name-form .chat-name-input:focus {
+  outline: none;
+  border: 2px solid #496de4;
+}
+.name-wrapper .name-form .chat-name-input:hover {
+  box-shadow: 0px 0px 10px #b8b8b8;
+}
+.name-wrapper .submit-button {
+  width: 300px;
+  height: 60px;
+  background-color: #496de4;
+  color: #fff;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  margin-top: 35px;
+  text-decoration: none;
+}
+.name-wrapper .submit-button:hover {
+  background-color: #FBFBFD;
+  color: black;
+  border: 2px solid #E8E8E8;
+}
+
+@media only screen and (min-width: 600px) and (min-height: 500px) {
+  .name-wrapper {
+    width: 450px;
+    height: 550px;
+    background-color: #FBFBFD;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+  }
+  .name-wrapper svg {
+    fill: black;
+  }
+  .name-wrapper .name-app {
+    margin-bottom: 40px;
+    color: black;
+  }
+  .name-wrapper .title {
+    color: black;
+  }
+  .name-wrapper .submit-button {
+    margin-top: 65px;
+  }
+}
+@media only screen and (max-height: 500px) and (orientation: landscape) {
+  .name-wrapper {
+    width: 500px;
+  }
+  .name-wrapper svg {
+    margin-top: 20px;
+  }
+  .name-wrapper .name-app {
+    margin-bottom: 10px;
+  }
+  .name-wrapper .name-form .chat-name-input {
+    margin-bottom: 20px;
+  }
+  .name-wrapper .submit-button {
+    margin-top: 15px;
+  }
+}/*# sourceMappingURL=landing.css.map */

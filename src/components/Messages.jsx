@@ -12,11 +12,18 @@ class Messages extends Component {
   }
 
   renderMessage(message) {
-    const {member, text} = message;
+    const {member, text, timestamp} = message;
     const {currentMember} = this.props;
     const messageFromMe = member.id === currentMember.id;
     const className = messageFromMe ?
       "Messages-message currentMember" : "Messages-message newMembers";
+
+    let messegeTime = '';
+    const time = new Date(timestamp);
+    messegeTime = time.toLocaleTimeString([], {
+      hour: '2-digit',
+      minute: '2-digit'
+    });
 
     return (
       <li className={className} key={Math.random()}>
@@ -28,7 +35,7 @@ class Messages extends Component {
           <div className="username">
             {member.clientData.username}
           </div>
-          <div className="text">{text}</div>
+          <div className="text">{text}<span className="time">{messegeTime}</span></div>
         </div>
       </li>
     );
