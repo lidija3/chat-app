@@ -11,4 +11,4 @@ Chat app is a realtime messaging platform. It allows users to send and receive m
 
 ## Preview
 
-![chatapp-preview](https://github.com/lidija3/thrive-marketing/assets/122623282/71b6eb02-1142-439d-a2ae-45cc1853637c)
+![chatapp-preview](https://github.com/lidija3/chat-app/assets/122623282/d64b574b-5d9e-47e1-a365-41f59f1ea2d2)
